@@ -44,33 +44,35 @@ playerScore = document.querySelector(".score");
 
 let finalScore = document.querySelector("#final-result");
 
-
-
 function shoot(event) {
-score++;
-document.querySelector(".score").innerHTML =  score;
-document.querySelector("#final-result").innerHTML =  score;
+  score++;
+  document.querySelector(".score").innerHTML = score;
+  document.querySelector("#final-result").innerHTML = score;
 
-console.log(score);  
+  console.log(score);
 }
 
+let showResult = document.querySelector(".game-over");
 function countDown() {
-
-
-
-    console.log("It works")
+  showResult.style.visibility = "visible";
+  console.log("It works");
 }
 
+setTimeout(countDown, 1000 * 10);
 
 
-setTimeout(countDown, (1000 * 30));
 console.log("1 2 3");
 
+const retryBtn = document.querySelector(".retry");
+retryBtn.addEventListener("click", retry);
 
-
-
-
-
+function retry(event) {
+  score = 0;
+  console.log(score);
+  document.querySelector("#final-result").innerHTML = score;
+  document.querySelector(".score").innerHTML = score;
+  showResult.style.visibility = "hidden";
+}
 
 
 
