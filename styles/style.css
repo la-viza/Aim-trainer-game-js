@@ -1,0 +1,102 @@
+:root {
+  --color-heading: #ea580c;
+  --color-secondary: #fffbeb;
+  --font-main: "Audiowide", cursive;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  overflow: visible;
+  text-align: center;
+  color: var(--color-secondary);
+  font-family: var(--font-main);
+}
+
+.screen {
+  background-image: url(/bg.png);
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 5rem;
+  color: var(--color-heading);
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  padding: 0.7rem;
+  background-color: transparent;
+  border: 3px solid #fffbeb;
+  color: var(--color-secondary);
+  cursor: pointer;
+  margin: 1rem;
+  font-family: var(--font-main);
+  font-size: 1.5rem;
+}
+
+div .statistics {
+  /* display: flex;
+justify-items: end;
+align-items: center; */
+
+  margin-bottom: -52rem;
+  margin-right: -70rem;
+  color: var(--color-secondary);
+  line-height: 1.5;
+}
+
+/* .info {
+    justify-self: end;
+    align-self: center;
+} */
+
+#time,
+#hits,
+#accuracy {
+  color: var(--color-heading);
+}
+
+.board {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  flex: 1;
+  background-color: ;
+ 
+  cursor: url(/img/7067443_goal_target_aim_icon.svg) 25 25, auto;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: var(--color-heading);
+  animation: circle 2s linear forwards;
+  border-radius: 50%;
+}
+
+@keyframes circle {
+  100% {
+    transfrom: scale(0);
+  } 
+}

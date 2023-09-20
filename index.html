@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GAME - Aim Trainer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+  <body>
+    <div class="screen">
+      <h1>AIM TRAINER</h1>
+      <button class="btn" id="start">Start Game</button>
+    </div>
+
+    <div class="screen">
+      <h2>Choose your time:</h2>
+
+      <ul>
+        <li>
+          <button class="btn class-btn">10 sec</button>
+        </li>
+
+        <li>
+          <button class="btn class-btn">30 sec</button>
+        </li>
+
+        <li>
+          <button class="btn class-btn">1 min</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="screen">
+      <div class="statistics">
+        <div class="info">
+          <p>Time: <span id="time">00:00</span></p>
+          <p>Hits: <span id="hits">0</span></p>
+          <p>Accuracy: <span id="accuracy">100%</span></p>
+        </div>
+      </div>
+
+      <!-- GAME ACTION HAPPEMS HERE -->
+
+      <div class="board" id="board">
+        <div class="circle"></div>
+      </div>
+    </div>
+
+    <script src="/script/script.js"></script>
+  </body>
+</html>
