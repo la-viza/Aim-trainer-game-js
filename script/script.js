@@ -72,6 +72,7 @@ function retry(event) {
   document.querySelector("#final-result").innerHTML = score;
   document.querySelector(".score").innerHTML = score;
   showResult.style.visibility = "hidden";
+  setTimeout(countDown, 1000 * 10);
 }
 
 
