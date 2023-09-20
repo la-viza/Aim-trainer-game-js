@@ -31,8 +31,8 @@
 const target = document.querySelector(".circle");
 
 function timeSet() {
-  target.style.top = Math.random() * 750 + "px";
-  target.style.left = Math.random() * 750 + "px";
+  target.style.top = Math.random() * 600 + "px";
+  target.style.left = Math.random() * 600 + "px";
 }
 
 setInterval(timeSet, 1000);
@@ -60,7 +60,6 @@ function countDown() {
 
 setTimeout(countDown, 1000 * 10);
 
-
 console.log("1 2 3");
 
 const retryBtn = document.querySelector(".retry");
@@ -74,7 +73,3 @@ function retry(event) {
   showResult.style.visibility = "hidden";
   setTimeout(countDown, 1000 * 10);
 }
-
-
-
-

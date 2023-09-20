@@ -1,4 +1,4 @@
-/* :root {
+:root {
   --color-heading: #ea580c;
   --color-secondary: #fffbeb;
   --font-main: "Audiowide", cursive;
@@ -11,13 +11,13 @@
 }
 
 body {
-  height: 100vh;
-  overflow: visible;
+  overflow: hidden;
   text-align: center;
   color: var(--color-secondary);
   font-family: var(--font-main);
 }
 
+/*  
 
 
 h1 {
@@ -89,21 +89,17 @@ align-items: center; */
   justify-content: center;
   align-items: center;
 
-  width: 800px;
-  height: 800px;
+  width: 650px;
+  height: 650px;
   position: relative;
-  cursor: url(/img/7067443_goal_target_aim_icon.svg) 25 25, auto;
- 
+  cursor: url(/7067443_goal_target_aim_icon.svg);
 }
 
 .circle {
   position: absolute;
   width: 50px;
   height: 50px;
-
-  background-color: red;
-
-  border-radius: 50%;
+  background-image: url(/8633028_2_monster_8bit_pet_icon.svg);
   z-index: 32423452;
 }
 
@@ -114,41 +110,55 @@ align-items: center; */
 } */
 
 .info {
-  width: inherit;
-  height: 50px;
-  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 650px;
+  height: 60px;
+  background-color: blue;
   line-height: 1.5;
-  position: absolute;
-  top: 0;
-  left: 0;
+}
+
+p {
+  font-size: 1.3rem;
+  color: var(--color-secondary);
 }
 
 span.score {
-  color: white;
+  color: #fde047;
   font-size: 1.5rem;
 }
 
 .game-over {
-  background-color: yellow;
+  background-color: var(--color-heading);
   height: 400px;
   width: 400px;
   display: flex;
   flex-direction: column;
   justify-items: center;
   align-items: center;
-visibility:hidden;
+  visibility: hidden;
   z-index: 32423452;
 }
 
+h3 {
+  margin-top: 4rem;
+  font-size: 1.5rem;
+}
 .retry {
-  padding: 1rem;
-  background-color: blueviolet;
-  width: 20%;
+  padding: 0.7rem;
+  background-color: transparent;
+  border: 4px solid #fffbeb;
+  color: var(--color-secondary);
+  cursor: pointer;
+  font-family: var(--font-main);
+  font-size: 1.5rem;
+  width: 30%;
   margin-top: 3rem;
 }
 
 .score-result {
   height: 50px;
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: bold;
 }
