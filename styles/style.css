@@ -83,6 +83,7 @@ align-items: center; */
   background-size: cover;
   height: 100vh;
   width: 100vw;
+  position:relative;
 
   display: flex;
   flex-direction: column;
@@ -92,7 +93,7 @@ align-items: center; */
   width: 650px;
   height: 650px;
   position: relative;
-  cursor: url(/7067443_goal_target_aim_icon.svg);
+  cursor: url(/7067443_goal_target_aim_icon.svg) 50 50, auto;
 }
 
 .circle {

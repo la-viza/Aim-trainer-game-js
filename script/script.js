@@ -73,3 +73,5 @@ function retry(event) {
   showResult.style.visibility = "hidden";
   setTimeout(countDown, 1000 * 10);
 }
+
+
